@@ -4,6 +4,9 @@ on:
     branches: [ main ]
     paths: [ hello-world-docker-action/** ]
   workflow_dispatch:
+    inputs:
+      who-to-greet:
+        required: true
 
 jobs:
   test-action:
